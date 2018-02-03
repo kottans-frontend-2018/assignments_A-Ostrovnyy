@@ -1,0 +1,938 @@
+@import "base"
+@import "libs"
+
+.wraper 
+    background-color: #eceef4
+    padding: 20px
+    padding-top: 35px
+
+
+.form_wrapper
+    max-width: 1140px
+    border-radius: 5px
+    border: 2px solid #c9d0e1 
+    background-color: #fff
+    margin: 0 auto
+    margin-bottom: 130px
+
+
+header
+    display: flex   
+    justify-content: space-between
+    border-bottom: 2px solid #c9d0e1
+    padding-left: 72px
+
+h2 
+        font-size: 14px
+        color: #6e768f
+        position: relative
+   
+.preview_order
+    padding-top: 17px
+    
+    h2 
+        font-size: 14px
+        color: #6e768f
+        position: relative
+        display: block
+
+        &::before
+            content: ''
+            position: absolute
+            left: -31px
+            top: -5px
+            width: 30px
+            height: 42px
+            background-image: url(/img/file.png)
+            background-repeat: no-repeat
+
+.order
+    display: block 
+    margin-bottom: 30px
+    text-transform: uppercase
+
+.preview 
+    padding: 0px
+    font-size: 10px
+    white-space: nowrap
+    text-align: left
+
+th 
+    text-transform: uppercase
+    font-size: 12px
+    width: 330px
+    text-align: left
+    padding-left: 10px
+    padding-right: 10px
+   
+td 
+    font-size: 12px
+    line-height: 2
+    padding-left: 10px
+    padding-right: 10px
+
+.preview_order
+    display: flex
+    flex-direction: column
+
+.preview_buttons
+    padding-top: 20px
+    padding-right: 35px
+    display: flex
+    flex-direction: column
+
+#btn__order, #order
+    background-color: #5fcac6
+    color: #ffffff
+    border-color: #54aca9  
+
+.preview_buttons button, .submite__wraper button
+    min-width: 173px
+
+.btn
+    white-space: nowrap
+    padding: 18px 35px
+    border-width: 2px
+    border-style: solid
+    border-color: d7d8e0
+    border-radius: 5px
+    font-size: 12px
+    font-weight: bold
+    color: #a5abc5
+    background-color: #f7f7fa
+    
+    text-transform: uppercase
+    cursor: pointer
+    margin-bottom: 12px
+
+    &:hover
+         opacity: .3
+    
+.help
+    
+    padding: 10px 50px 28px 71px 
+    border-left: 2px solid #c9d0e1
+    min-width: 260px
+
+    > p 
+        color: #afa6b8  
+        line-height: 1.44  
+        margin-bottom: 18px 
+
+    > h2 
+        margin-bottom: 12px
+        text-transform: uppercase
+        position: relative
+
+    > h2::before
+        content: ''
+        position: absolute
+        left: -41px
+        top: -3px
+        width: 42px
+        height: 42px
+        background-image: url(/img/rescircle.png)
+        background-repeat: no-repeat
+
+.address__block a
+    text-decoration: none
+    color: #757d94
+    font-style: normal
+    font-weight: 800
+    margin-right: 15px
+
+    &:last-child 
+        margin-right: 0
+
+    &:hover
+        border-bottom: 1px solid #6e768f
+
+.container
+    width: 900px
+    margin: 0 auto
+    
+form 
+    padding: 0
+    padding-bottom: 60px
+
+.seletion 
+    padding-top: 84px
+    text-align: center
+    display: flex
+    margin-bottom: 105px
+
+    h2 
+        font-size: 20px
+        letter-spacing: 3px  
+        margin-bottom: 84px  
+        text-transform: uppercase
+        
+        span 
+            border-bottom: 1px solid #d7d8e0
+            padding-bottom: 9px
+
+.radio__choise
+    
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    flex-wrap: wrap;
+    align-items: baseline
+        
+.radio__type
+    border: 1px solid #d7d9e0
+    border-radius: 10px
+    
+
+    &:hover
+        border-color: #59a9e4
+
+.visually__hidden
+    position: absolute
+    overflow: hidden
+    clip: rect(0 0 0 0) 
+    height: 1px
+    width: 1px
+    margin: -1px
+    padding: 0
+    border: 0
+
+input[type=radio]:checked 
+    & + .select__wrapper,
+    & + .radio__wraper,
+    & + .payment__radio__wraper
+	    border-color: #59a9e4
+
+input[type=radio]:checked 
+    & + .select__wrapper::after, 
+    & + .radio__wraper::after,
+    & + .payment__radio__wraper::after
+        content: ''
+        width: 32px
+        height: 32px
+        background-image: url(/img/check.png)
+        position: absolute
+        top: -20px
+        right: -20px
+
+.select__wrapper
+    display: flex
+    flex-direction: column
+    padding: 25px 87px
+    background-color: #f7f7fa
+    border: 6px solid transparent
+    position: relative
+    cursor: pointer
+    border-radius: 10px
+    
+    
+    img 
+        margin-bottom: 20px
+
+    span 
+        font-weight: bold
+        font-size: 14px
+
+.upload 
+    margin-bottom: 105px
+    .container
+        padding-left: 13px
+        padding-right: 13px
+    h2 
+        display: inline-block
+    span 
+        font-weight: normal
+        font-size: 12px
+
+.caption
+    font-size: 21px
+    font-weight: bold
+    position: relative
+    margin-bottom: 72px
+    letter-spacing: 1.4px
+
+    &::before
+        content: '1'
+        width: 42px
+        height: 42px
+        border: 1px solid #6e768f
+        border-radius: 50%
+        position: absolute
+        left: -71px
+        text-align: center
+        line-height: 42px
+        top: -10px
+
+
+.btn_upload
+    margin-bottom: 60px
+    
+
+    input[type=file]
+        display: none
+
+    span  
+        font-size: 16px
+        background-color: #f7f7fa   
+        padding: 14px 35px
+        padding-left: 66px
+        border: 2px solid #d7d9e0
+        border-radius: 5px
+        color: #9098b8
+        font-weight: bold
+        position: relative
+        cursor: pointer
+
+        &:hover
+            border-color: #5fcac6
+
+        &::before
+            content: ''
+            width: 21px
+            height: 13px
+            background-image: url(/img/cloud.png)
+            position: absolute
+            top: 19px
+            left: 29px
+
+.upload__list
+    display: grid
+    grid-template-columns: minmax(min-content,6fr) minmax(min-content,3.2fr) minmax(min-content,4.4fr) 1fr
+    grid-gap: 10px
+    padding: 40px
+    font-size: 16px
+    border: 2px solid #d7d9e0
+    border-radius: 5px
+    
+.th 
+    text-transform: uppercase
+    padding-bottom: 11px
+    font-size: 12px
+    padding-left: 3px
+    font-weight: bold
+
+.file__name
+    position: relative
+    margin-left: 38px
+    margin-bottom: 13px
+
+    &::before
+        content: ''
+        width: 15px
+        height: 19px
+        background-image: url(/img/upload.png)
+        position: absolute
+        top: 0px
+        left: -38px
+
+.th_remove
+    margin-right: 27px
+
+.remove button
+    width: 13px
+    height: 18px
+    background-image: url(/img/recyclebin.png) 
+    background-repeat: no-repeat
+    background-position: 35% 0
+    cursor: pointer
+    background-color: transparent
+    border-color: transparent
+    margin-left: 17px
+
+    &:hover 
+        opacity: .7
+    
+
+.language
+    margin-bottom: 84px
+
+    .container
+        padding-left: 18px
+        padding-right: 18px 
+
+    .caption 
+        margin-bottom: 55px
+
+        &::before
+            content: '2' 
+
+.select__wraper select 
+    border: 2px solid #d7d9e0
+    border-radius: 5px
+    background-color: #f7f7fa
+    padding: 16px 55px
+    padding-right: 73px
+    cursor: pointer
+    margin-right: 23px
+    font-size: 14px
+    color: #9098b7
+    appearance: none
+    // grid-area: select
+    
+    
+    &:hover
+        border-color: #5fcac6
+    
+
+.select__wraper
+    position: relative
+    padding: 0
+    
+
+    &::before
+        position: absolute
+        content: ''
+        width: 2px
+        display: block
+        height: 100%
+        
+        background-color: #d7d9e0
+        z-index: 2
+        right: 65px
+
+    &::after 
+        content: ''
+        border-style: solid
+        border-width: 5px 5px 0 5px
+        border-color: #9098b8 transparent transparent transparent
+
+        position: absolute
+        top: 50%
+        right: 40px
+        z-index: 1
+        margin-top: -2px
+
+.added::after
+        content: ''
+        background-image: url(/lmg/recyclebin.png)
+        background-position: 25px 45px
+        width: 13px
+        height: 18px
+        position: absolute
+
+
+.from, .to
+    margin-bottom: 38px
+    padding-left: 2px
+
+    span 
+        font-size: 12px
+        text-align: right
+        padding-right: 10px
+        padding-top: 20px
+        text-transform: uppercase
+        font-weight: bold
+        // grid-area: head
+
+.from, .to
+	display: grid
+	grid-template-columns: 60px repeat(2, min-content) 40px min-content
+    grid-column-gap: 5px
+
+.to 
+    grid-row-gap: 50px
+
+.delete
+    border-color: transparent
+    background-color: transparent
+    background-image: url(/img/recyclebin.png)
+    background-position: 0 50%
+    background-repeat: no-repeat
+    cursor: pointer
+    z-index: 2
+    // grid-area: delete
+    
+    &:hover
+        coursor: pointer
+        opacity: .7
+
+.add__language
+    white-space: nowrap
+    text-transform: uppercase
+    border-radius: 5px
+    border: 2px solid #d7d9e0
+    background-color: #f7f7fa
+    padding: 16px 20px
+    cursor: pointer
+    font-family: 'Nunito Sans', sans-serif
+    font-size: 14px
+    color: #9098b7
+    -webkit-appearance: none
+    box-shadow: none
+    // grid-area: add
+    
+    &:hover
+        border-color: #5fcac6
+
+.desire_urgent 
+    margin-bottom: 75px
+
+.desire
+
+    > h2
+        padding-left: 25px
+
+    .caption 
+        margin-bottom: 48px
+
+        &::before
+            content: '3'
+.urgent
+    
+    .caption 
+        margin-bottom: 77px
+
+        &::before
+            content: '4'
+            left: -46px
+
+.row_wraper
+    display: flex
+    justify-content: space-between
+    flex-direction: row
+    padding-left: 12px
+    padding-right: 18px 
+
+.desire 
+    min-width: 420px
+
+.radio__wraper
+    display: flex
+    flex-direction: column
+    padding: 17px 30px
+    background-color: #f7f7fa
+    border: 6px solid transparent
+    position: relative
+    cursor: pointer
+    border-radius: 10px
+    display: inline-block
+    font-size: 16px
+    min-width: 236px
+
+    &--img 
+        margin-right: 29px
+
+.radio__align 
+    justify-content: flex-start
+
+    & label 
+        margin-bottom: 22px
+
+.urgent > h2
+    padding-left: 5px
+
+input[type=range]
+    appearance: none
+    width: 100%
+    position: relative
+    margin-bottom: 16px
+    margin-left: -7px
+    cursor: pointer
+
+input[type=range]::-webkit-slider-thumb
+    -webkit-appearance: none
+    width: 20px
+    height: 20px
+    border-radius: 50%
+    background-color: #edbe76
+    margin-top: -5px
+    z-index: 2
+    position: relative
+    
+
+input[type=range]::after
+    display: block
+    content: ''
+    width: 10px
+    height: 10px
+    border-radius: 50%
+    background-color: #d6d8e2
+    position: absolute
+    right: 0
+    z-index: 1
+
+input[type=range]::before
+    display: block
+    content: ''
+    width: 10px
+    height: 10px
+    border-radius: 50%
+    background-color: #d6d8e2
+    position: absolute
+    left: 0
+    z-index: 1
+
+input[type=range]::-webkit-slider-runnable-track
+    appearance: none
+    width: 100%    
+    background: #eff0f5
+    height: 10px
+    border-radius: 5px
+
+.range__text
+    width: 112%
+    text-transform: uppercase
+    font-weight: bold
+    text-align: center
+    display: flex
+    justify-content: space-between
+    margin-left: -35px
+    margin-bottom: 60px
+    
+    & .orange
+        color: #edbe75
+
+.timeline__info
+    padding-left: 65px
+    padding-top: 16px
+    padding-bottom: 20px
+    margin-left: -40px
+    border: 1px solid #e6e8ee
+
+    & h3 
+        text-transform: uppercase
+        font-size: 12px
+        margin-bottom: 25px
+        position: relative
+
+        &::before 
+            content: ''
+            width: 20px
+            height: 20px
+            background-image: url(/img/info.png)
+            position: absolute
+            background-repeat: no-repeat
+            top: -5px
+            left: -30px
+
+    > p span 
+        text-transform: uppercase
+        color: #edbe75
+        font-weight: bold
+
+.payment 
+    margin-bottom: 50px
+
+    .container 
+        padding-left: 14px
+        padding-right: 14px
+    h2
+        margin-bottom: 56px
+        &::before
+            content: '5'
+    
+    p 
+        font-size: 14px
+        margin-bottom: 50px
+
+        & > a 
+            color: inherit
+
+            &:hover
+                font-weight: bold
+.payment
+    margin-bottom: 110px
+
+    &__info
+        margin-bottom: 30px
+        
+        label 
+            display: block
+            font-size: 12px
+            margin-bottom: 10px
+            text-transform: uppercase
+            font-weight: bold
+            padding-left: 11px
+        
+        input 
+            margin-bottom: 35px
+            padding: 15px
+            border-radius: 5px
+            border: 2px solid #d7d9e0
+            background-repeat: no-repeat
+            background-position: 96% 50%
+            width: 300px
+
+        input:valid
+            background-image: url(/img/check_l.png)
+
+        input:invalid
+            background-image: url(/img/wrong.png)
+
+    &__wraper 
+        display: flex
+        flex-direction: start
+
+    &__email 
+        margin-right: 25px
+
+    &__password
+     letter-spacing: 5
+
+    &__radio 
+        margin-bottom: 72px
+
+    &__radio label
+        margin-right: 30px
+        max-width: 220px
+        display: inline-block
+        vertical-align: middle
+    
+    &__radio__wraper
+        padding: 25px 40px
+        background-color: #f7f7fa
+        border: 6px solid transparent
+        position: relative
+        cursor: pointer
+        border-radius: 10px
+        
+        
+        & > img 
+            position: relative
+            top: 9px
+            right: -12px
+        
+
+        & > span 
+            font-size: 0
+
+.card 
+    &__info 
+        display: flex
+        justify-content: flex-start
+
+    &__item 
+        display: flex
+        flex-direction: column
+        text-transform: uppercase
+        margin-right: 30px
+        font-weight: bold
+
+        &:first-child 
+            width: 40%
+
+        & label 
+            margin-bottom: 10px
+        
+        & input 
+            font-size: 14px
+            padding: 14px 25px
+            border-radius: 5px
+            border: 2px solid #d7d9e0
+            text-align: center
+    
+    &__number 
+        background-image: url(/img/visa_bg.png)
+        background-repeat: no-repeat
+        background-position: 97% 50%
+        // width: 375px
+        
+
+    &__date 
+        width: 172px
+
+    &__cvv
+        width: 106px  
+
+
+
+.submite
+
+    &__wraper
+        display: flex
+        justify-content: flex-end
+        vertical-align: middle
+
+        input:hover 
+            box-shadow: 0 0 10px 5px #5fcac6
+            transition: box-shadow .3s in-out
+
+        label   
+            margin-left: 20px
+
+            a:hover 
+                font-weight: bold
+
+        input, label, label a
+            font-size: 14px
+            color: inherit
+            margin-top: 20px
+
+        button 
+            margin-left: 30px
+
+.main__header 
+    border-bottom: 2px solid transparent
+    max-width: 1140px
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-left: 0
+    padding-top: 35px
+    margin-bottom: 50px
+
+.header__btn 
+    background-color: transparent
+    position: relative
+    max-height: 52px
+    padding-right: 15px
+    
+    &:hover
+        border-color: #5fcac6
+
+.logo 
+    order: 2
+
+    &:hover,
+    img:hover 
+        border-radius: 50%
+        box-shadow: 0 0 20px 10px #5fcac6
+        transition: box-shadow .3s in-out
+
+.back
+    order: 1
+
+    &::before 
+        content: ""
+        width: 17px
+        height: 8px
+        background-image: url(/img/arrow.png)
+        background-repeat: no-repeat
+        position: absolute
+        left: 10px
+        top: 20px
+    
+.sign 
+    order: 3
+    padding-right: 15px
+    padding-left: 50px
+
+    &::before 
+        content: ''
+        width: 13px
+        height: 13px
+        background-image: url(/img/human.png)
+        background-repeat: no-repeat
+        background-position: 0 50%
+        position: absolute
+        left: 20px
+        
+
+//**************FOOTER
+
+footer
+    background-color: #444a62
+    
+    
+.footer
+    &__container
+        max-width: 1140px
+        margin: 0 auto
+
+    &__wraper
+        padding-top: 50px
+        padding-bottom: 50px
+        display: grid
+        grid-template-columns: repeat(4, minmax(min-content, 1fr))
+        grid-gap: 120px
+
+    &__item
+        padding-left: 35px
+
+        h3 
+            text-transform: uppercase
+            color: #c6cdea
+            position: relative
+
+        p 
+            color: #b4b9d7
+
+        img 
+            border-radius: 100%
+            width: 100px
+            height: 100px
+
+        a 
+            color: inherit
+            text-decoration: none
+
+            &:hover 
+                text-decoration: underline
+
+    &__logo
+        padding-left: 0
+        margin-left: auto
+        width: 100px
+        height: 100px
+            
+
+.work::before 
+    content: ''
+    width: 21px
+    height: 19px
+    background-image: url(/img/heart.png)
+    background-repeat: no-repeat
+    position: absolute
+    left: -35px
+
+.office::before 
+    content: ''
+    width: 21px
+    height: 21px
+    background-image: url(/img/compas.png)
+    background-repeat: no-repeat
+    position: absolute
+    left: -35px
+
+.connect::before 
+    content: ''
+    width: 20px
+    height: 22px
+    background-image: url(/img/link.png)
+    background-repeat: no-repeat
+    position: absolute
+    left: -35px
+
+.link 
+    display: flex
+    flex-direction: column
+    padding-left: 25px
+    
+    a 
+        font-size: 13px
+        margin-bottom: 10px
+        position: relative
+        
+        &:hover 
+            color: #c6cdea
+            
+.facebook::before
+    content: ''
+    width: 16px
+    height: 16px
+    background-image: url(/img/facebook.png)
+    position: absolute
+    left: -25px
+    top: -2px
+
+.twiter::before
+    content: ''
+    width: 16px
+    height: 16px
+    background-image: url(/img/twitter.png)
+    position: absolute
+    left: -25px
+    top: -2px
+
+.linkedin::before
+    content: ''
+    width: 16px
+    height: 16px
+    background-image: url(/img/linkedin.png)
+    position: absolute
+    left: -25px
+    top: -2px
+
+
+@import "media" // Всегда в конце
